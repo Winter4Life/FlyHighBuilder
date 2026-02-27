@@ -1,4 +1,4 @@
-from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy import Column, ForeignKey, Integer, String, UniqueConstraint
 from database import Base, relationship
 
 class Character(Base):
@@ -28,3 +28,8 @@ class SkillsResonance(Base):
     char_id = Column(Integer, ForeignKey('characters.id'))
     resonance_level = Column(Integer, nullable=False)
     description = Column(String, nullable=False)
+    
+    # Only one row per resonance level
+    __table_args__ = (
+        UniqueConstraint('char_id', 'resonance_level', name='uix_char_resonance')
+    )
