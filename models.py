@@ -12,6 +12,7 @@ class Character(Base):
     
     # Relationship
     character_specialties = relationship("CharacterSpecialty", backref="character") # reverses relationship
+    SkillsResonance = relationship("SkillsResonance", backref="character")
     
 class CharacterSpecialty(Base):
     __tablename__ = 'character_specialties'
@@ -19,3 +20,11 @@ class CharacterSpecialty(Base):
     id = Column(Integer, primary_key=True, index=True)
     char_id = Column(Integer, ForeignKey('characters.id'))
     specialty = Column(String, nullable=False)
+
+class SkillsResonance(Base):
+    __tablename__ = 'skills_resonances'
+    
+    id = Column(Integer, primary_key=True, index=True)
+    char_id = Column(Integer, ForeignKey('characters.id'))
+    resonance_level = Column(Integer, nullable=False)
+    description = Column(String, nullable=False)
