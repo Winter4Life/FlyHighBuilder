@@ -1,6 +1,6 @@
 # FlyHighBuilder
 
-Database and API for Haikyuu Fly High character builds, skills, memories, and team optimization.
+Database and API for **Haikyuu Fly High** character builds, skills, memories, and team optimization.
 
 ## Setup
 
@@ -15,4 +15,10 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 
 # Install dependencies
-pip install fast api sqlalchemy psycopg2-binary
+pip install fastapi sqlalchemy psycopg2-binary
+
+## Database Tables
+
+Schema documentation [here](https://docs.google.com/document/d/1SzFKvQpeVtxyhcw7e6F4aPQ_R297B7JgZACA-M1I2Tg/edit?usp=sharing)
+
+Curently contains tables from branch characters-schema
