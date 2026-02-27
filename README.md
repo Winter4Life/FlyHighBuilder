@@ -21,4 +21,7 @@ pip install fastapi sqlalchemy psycopg2-binary
 
 Schema documentation [here](https://docs.google.com/document/d/1SzFKvQpeVtxyhcw7e6F4aPQ_R297B7JgZACA-M1I2Tg/edit?usp=sharing)
 
-Curently contains tables from branch characters-schema and skills-resonance-shema
+Curently contains tables from branch 
+- characters-schemas
+- skills-resonance-schema
+- skills-tags-schema
