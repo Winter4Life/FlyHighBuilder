@@ -1,34 +1,46 @@
-from sqlalchemy import Column, ForeignKey, Integer, String, UniqueConstraint
+from sqlalchemy import Column, ForeignKey, Integer, String, UniqueConstraint, Enum
 from database import Base, relationship
 
 class Character(Base):
     __tablename__ = 'characters'
     
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
-    rarity = Column(String, nullable=False)
+    rarity = Column(
+        Enum("UR", "SSR", "SR", name="rarity_lvl"), 
+        nullable=False
+    )
     school = Column(String, nullable=False)
     position = Column(String, nullable=False)
     
-    # Relationship
-    character_specialties = relationship("CharacterSpecialty", backref="character") # reverses relationship
-    skills_resonances = relationship("SkillsResonance", backref="character")
-    skills = relationship("Skills", backref="character")
+    # Relationships
+    specialties = relationship("CharacterSpecialty", back_populates="character", cascade="all, delete") # reverses relationship
+    resonances = relationship("SkillResonance", back_populates="character", cascade="all, delete")
+    skills = relationship("Skill", back_populates="character", cascade="all, delete")
+
     
 class CharacterSpecialty(Base):
     __tablename__ = 'character_specialties'
     
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True)
     char_id = Column(Integer, ForeignKey('characters.id'))
     specialty = Column(String, nullable=False)
+    
+    character = relationship("Character", back_populates="resonances")
+    
+    __table_args__ = (
+        UniqueConstraint("char_id", "specialty", name="uix_char_specialty"),
+    )
 
 class SkillsResonance(Base):
     __tablename__ = 'skills_resonances'
     
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True)
     char_id = Column(Integer, ForeignKey('characters.id'))
     resonance_level = Column(Integer, nullable=False)
     description = Column(String, nullable=False)
+    
+    character = relationship("Character", back_populates="resonances")
     
     # Only one row per resonance level
     __table_args__ = (
@@ -38,29 +50,52 @@ class SkillsResonance(Base):
 class Skill(Base):
     __tablename__ = "skills"
     
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True)
     char_id = Column(Integer, ForeignKey('characters.id'))
     name = Column(String, nullable=False)
     description = Column(String, nullable=False)
     
-    skilltags = relationship("SkillTag", backref="skill")
+    character = relationship("Character", back_populates="skills")
+    skill_tags = relationship("SkillTag", back_populates="skill", cascade="all, delete")
     
 class Tag(Base):
     __tablename__ = "tags"
     
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True)
     tag = Column(String, nullable=False, unique=True)
     
-    skilltags = relationship("SkillTag", backref="tag")
+    skill_tags = relationship("SkillTag", back_populates="tag", cascade="all, delete")
 
 class SkillTag(Base):
     __tablename__ = "skill_tags"
     
-    id = Column(Integer, primary_key=True, index=True)
-    skill_id = Column(Integer, ForeignKey('skills.id'))
-    tag_id = Column(Integer, ForeignKey('tags.id'))
+    id = Column(Integer, primary_key=True)
+    skill_id = Column(Integer, ForeignKey('skills.id'), nullable=False)
+    tag_id = Column(Integer, ForeignKey('tags.id'), nullable=False)
+    
+    skill = relationship("Skill", back_populates="skill_tags")
+    tag = relationship("Tag", back_populates="skill_tags")
     
     # No duplicate tag pair
     __table_args__ = (
         UniqueConstraint('skill_id', 'tag_id', name='uix_skill_tag'),
     )
+    
+class Potentials(Base):
+    __tablename__ = "potentials"
+    
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=False, unique=True)
+    color = Column(
+        Enum("Gold", "Purple", "Blue", name="pot_color"),
+        nullable=False
+    )
+    effect_2pc = Column(String, nullable=False)
+    effect_4pc = Column(String, nullable=False)
+    
+class Stats(Base):
+    __tablename__ = "stats"
+    
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=False, unique=True)
+    description = Column(String, nullable=False)
