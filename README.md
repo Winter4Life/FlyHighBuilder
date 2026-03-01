@@ -26,3 +26,4 @@ Curently contains tables from branch
 - skills-resonance-schema
 - skills-tags-schema
 - potentials-schema
+- memories-schema

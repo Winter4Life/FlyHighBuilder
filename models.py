@@ -1,4 +1,4 @@
-from sqlalchemy import Column, ForeignKey, Integer, String, UniqueConstraint, Enum
+from sqlalchemy import Column, ForeignKey, Integer, String, UniqueConstraint, Enum, Float
 from database import Base, relationship
 
 class Character(Base):
@@ -99,3 +99,49 @@ class Stats(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False, unique=True)
     description = Column(String, nullable=False)
+    
+    memory_stats = relationship("MemoryStat", back_populates="stat")
+    
+class Memory(Base):
+    __tablename__ = "memories"
+    
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=False, unique=True)
+    rarity = Column(
+        Enum("SP", "UR", "SSR", "SR", name="rarity_lvl"), 
+        nullable=False
+    )
+    
+    stats = relationship("MemoryStat", back_populates="memory", cascade="all, delete")
+    tiers = relationship("MemoryTier", back_populates="memory", cascade="all, delete")
+    
+class MemoryStat(Base):
+    __tablename__ = "memory_stats"
+    
+    id = Column(Integer, primary_key=True)
+    memory_id = Column(Integer, ForeignKey("memories.id"), nullable=False)
+    stat_id = Column(Integer, ForeignKey("stats.id"), nullable=False)
+    
+    level = Column(Integer, nullable=False)  # 1 or 80
+    value = Column(Float, nullable=False)
+    
+    memory = relationship("Memory", back_populates="stats")
+    stat = relationship("Stat", back_populates="memory_stats")
+
+    __table_args__ = (
+        UniqueConstraint('memory_id', 'stat_id', 'level', name='uix_memory_stat_level'),
+    )
+    
+class MemoryTier(Base):
+    __tablename__ = "memory_tiers"
+    
+    id = Column(Integer, primary_key=True)
+    memory_id = Column(Integer, ForeignKey("memories.id"), nullable=False)
+    tier = Column(Integer, nullable=False)
+    description = Column(String, nullable=False)
+    
+    memory = relationship("Memory", back_populates="tiers")
+
+    __table_args__ = (
+        UniqueConstraint('memory_id', 'tier', name='uix_memory_tier'),
+    )
