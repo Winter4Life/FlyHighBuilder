@@ -25,4 +25,4 @@ Curently contains tables from branch
 - characters-schemas
 - skills-resonance-schema
 - skills-tags-schema
-- potentias-schema
+- potentials-schema
