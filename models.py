@@ -7,7 +7,7 @@ class Character(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
     rarity = Column(
-        Enum("UR", "SSR", "SR", name="rarity_lvl"), 
+        Enum("SP", "UR", "SSR", "SR", name="rarity_lvl"), 
         nullable=False
     )
     school = Column(String, nullable=False)
