@@ -19,6 +19,21 @@ class Character(Base):
     resonances = relationship("ResonanceBonus", back_populates="character", cascade="all, delete")
     base_stats = relationship("CharacterStat", back_populates="character", cascade="all, delete")
     
+class CharacterStat(Base):
+    __tablename__ = "character_stats"
+
+    id = Column(Integer, primary_key=True)
+    char_id = Column(Integer, ForeignKey("characters.id"), nullable=False)
+    stat_id = Column(Integer, ForeignKey("stats.id"), nullable=False)
+    value = Column(Float, nullable=False)
+
+    character = relationship("Character", back_populates="stats")
+    stat = relationship("Stat", back_populates="character_stats")
+
+    __table_args__ = (
+        UniqueConstraint("char_id", "stat_id", name="uix_character_stat"),
+    )
+    
 class CharacterSpecialty(Base):
     __tablename__ = 'character_specialties'
     
@@ -108,7 +123,7 @@ class Memory(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False, unique=True)
     rarity = Column(
-        Enum("SP", "UR", "SSR", "SR", name="rarity_lvl"), 
+        Enum("SP", "UR", "SSR", "SR", name="memory_rarity"), 
         nullable=False
     )
     
