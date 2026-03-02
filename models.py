@@ -2,12 +2,12 @@ from sqlalchemy import Column, ForeignKey, Integer, String, UniqueConstraint, En
 from database import Base, relationship
 
 class Character(Base):
-    __tablename__ = 'characters'
+    __tablename__ = "characters"
     
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
     rarity = Column(
-        Enum("SP", "UR", "SSR", "SR", name="rarity_lvl"), 
+        Enum("SP", "UR", "SSR", "SR", name="character_rarity"), 
         nullable=False
     )
     school = Column(String, nullable=False)
@@ -15,15 +15,15 @@ class Character(Base):
     
     # Relationships
     specialties = relationship("CharacterSpecialty", back_populates="character", cascade="all, delete") # reverses relationship
-    resonances = relationship("SkillResonance", back_populates="character", cascade="all, delete")
     skills = relationship("Skill", back_populates="character", cascade="all, delete")
-
+    resonances = relationship("ResonanceBonus", back_populates="character", cascade="all, delete")
+    base_stats = relationship("CharacterStat", back_populates="character", cascade="all, delete")
     
 class CharacterSpecialty(Base):
     __tablename__ = 'character_specialties'
     
     id = Column(Integer, primary_key=True)
-    char_id = Column(Integer, ForeignKey('characters.id'))
+    char_id = Column(Integer, ForeignKey('characters.id'), nullable=False)
     specialty = Column(String, nullable=False)
     
     character = relationship("Character", back_populates="resonances")
@@ -36,7 +36,7 @@ class SkillsResonance(Base):
     __tablename__ = 'skills_resonances'
     
     id = Column(Integer, primary_key=True)
-    char_id = Column(Integer, ForeignKey('characters.id'))
+    char_id = Column(Integer, ForeignKey('characters.id'), nullable=False)
     resonance_level = Column(Integer, nullable=False)
     description = Column(String, nullable=False)
     
@@ -51,7 +51,7 @@ class Skill(Base):
     __tablename__ = "skills"
     
     id = Column(Integer, primary_key=True)
-    char_id = Column(Integer, ForeignKey('characters.id'))
+    char_id = Column(Integer, ForeignKey('characters.id'), nullable=False)
     name = Column(String, nullable=False)
     description = Column(String, nullable=False)
     
