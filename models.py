@@ -15,9 +15,9 @@ class Character(Base):
     
     # Relationships
     specialties = relationship("CharacterSpecialty", back_populates="character", cascade="all, delete") # reverses relationship
+    stats = relationship("CharacterStat", back_populates="character", cascade="all, delete")
     skills = relationship("Skill", back_populates="character", cascade="all, delete")
-    resonances = relationship("ResonanceBonus", back_populates="character", cascade="all, delete")
-    base_stats = relationship("CharacterStat", back_populates="character", cascade="all, delete")
+    skill_resonances = relationship("SkillsResonance", back_populates="character", cascade="all, delete")
     
 class CharacterStat(Base):
     __tablename__ = "character_stats"
@@ -41,7 +41,7 @@ class CharacterSpecialty(Base):
     char_id = Column(Integer, ForeignKey('characters.id'), nullable=False)
     specialty = Column(String, nullable=False)
     
-    character = relationship("Character", back_populates="resonances")
+    character = relationship("Character", back_populates="specialties")
     
     __table_args__ = (
         UniqueConstraint("char_id", "specialty", name="uix_char_specialty"),
@@ -55,7 +55,7 @@ class SkillsResonance(Base):
     resonance_level = Column(Integer, nullable=False)
     description = Column(String, nullable=False)
     
-    character = relationship("Character", back_populates="resonances")
+    character = relationship("Character", back_populates="skill_resonances")
     
     # Only one row per resonance level
     __table_args__ = (
@@ -108,7 +108,7 @@ class Potentials(Base):
     effect_2pc = Column(String, nullable=False)
     effect_4pc = Column(String, nullable=False)
     
-class Stats(Base):
+class Stat(Base):
     __tablename__ = "stats"
     
     id = Column(Integer, primary_key=True)
@@ -116,6 +116,7 @@ class Stats(Base):
     description = Column(String, nullable=False)
     
     memory_stats = relationship("MemoryStat", back_populates="stat")
+    character_stats = relationship("CharacterStat", back_populates="stat")
     
 class Memory(Base):
     __tablename__ = "memories"
