@@ -101,8 +101,8 @@ class Potentials(Base):
     
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False, unique=True)
-    color = Column(
-        Enum("Gold", "Purple", "Blue", name="pot_color"),
+    category = Column(
+        Enum("Quick Attack", "Power Attack", "Block", "Receive", "Set", "Enhancement", name="potential_category"),
         nullable=False
     )
     effect_2pc = Column(String, nullable=False)
@@ -114,6 +114,10 @@ class Stat(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False, unique=True)
     description = Column(String, nullable=False)
+    category = Column(
+        Enum("Attack", "Attack Bonus", "Defense", "Defense Bonus", name="stat_category"),
+        nullable=False
+    )
     
     memory_stats = relationship("MemoryStat", back_populates="stat")
     character_stats = relationship("CharacterStat", back_populates="stat")

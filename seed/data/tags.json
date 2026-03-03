@@ -1,0 +1,38 @@
+[
+    {"tag": "Passive"},
+    {"tag": "Ultimate"},
+    {"tag": "Active"},
+    {"tag": "Receive"},
+    {"tag": "Set"},
+    {"tag": "Serve"},
+    {"tag": "Block"},
+    {"tag": "Save"},
+    {"tag": "Stamina"},
+
+    {"tag": "Stat Bonus"},
+    {"tag": "Enhance Team"},
+    {"tag": "Team Morale"},
+    {"tag": "Weaken Opponent"},
+    {"tag": "Apply Debuff"},
+    {"tag": "Reduce Opponent's Stamina"},
+
+    {"tag": "Quick Attack"},
+    {"tag": "Power Attack"},
+    {"tag": "Stamina Burst"},
+    {"tag": "Modify Results"},
+    {"tag": "Setter Dump"},
+
+    {"tag": "Critical Power Up"},
+    {"tag": "Cooldown Reduction"},
+    {"tag": "Quick Spike Boost"},
+    {"tag": "Block Break"},
+    {"tag": "Awareness Up"},
+    {"tag": "Power Up"},
+    {"tag": "Power Attack Boost"},
+    {"tag": "Power Attack Skill Cooldown Reduction"},
+    {"tag": "Block Power Up"},
+    {"tag": "Counter Power Attack"},
+    {"tag": "Received “Attack Tempo”"},
+    {"tag": "Quick Spike Power Stack"},
+    {"tag": "Receive Power Up"}
+]
