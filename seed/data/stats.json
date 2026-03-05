@@ -14,6 +14,11 @@
         "description": "Increases Set ability of the player.",
         "category": "Attack"
     },
+    {
+        "name": "Serve", 
+        "description": "Increases Serve ability of the player.",
+        "category": "Attack"
+    },
 
     {
         "name": "Awareness", 
