@@ -25,6 +25,7 @@ class CharacterStat(Base):
     id = Column(Integer, primary_key=True)
     char_id = Column(Integer, ForeignKey("characters.id"), nullable=False)
     stat_id = Column(Integer, ForeignKey("stats.id"), nullable=False)
+    level = Column(Float, nullable=False)
     value = Column(Float, nullable=False)
 
     character = relationship("Character", back_populates="stats")
