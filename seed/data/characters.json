@@ -1,0 +1,642 @@
+[
+    {
+        "name": "Shoyo Hinata (Sakura)",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Koshi Sugawara (After-School)",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "position": "Setter"
+    },
+    {
+        "name": "Kenma Kozume (Sakura)",
+        "rarity": "SP",
+        "school": "Nekoma",
+        "position": "Setter"
+    },
+    {
+        "name": "Yu Nishinoya (After-School)",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "position": "Libero"
+    },
+    {
+        "name": "Kotaro Bokuto (Blazing Beach)",
+        "rarity": "SP",
+        "school": "Fukurodani",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Keiji Akaashi (Blazing Beach)",
+        "rarity": "SP",
+        "school": "Fukurodani",
+        "position": "Setter"
+    },
+    {
+        "name": "Takanobu Aone (Blazing Beach)",
+        "rarity": "SP",
+        "school": "Fukurodani",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Kei Tsukishima (Fireworks Festival)",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Tetsuro Kuroo (Fireworks Festival)",
+        "rarity": "SP",
+        "school": "Nekoma",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Akira Kunimi (Sports Festival)",
+        "rarity": "SP",
+        "school": "Aoba Johsai",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Kanji Koganegawa (Sports Festival)",
+        "rarity": "SP",
+        "school": "Date Kogyo",
+        "position": "Setter"
+    },
+    {
+        "name": "Hajime Iwaizumi (School Festival)",
+        "rarity": "SP",
+        "school": "Aoba Johsai",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Toru Oikawa (School Festival)",
+        "rarity": "SP",
+        "school": "Aoba Johsai",
+        "position": "Setter"
+    },
+    {
+        "name": "Wakatoshi Ushijima (School Festival)",
+        "rarity": "SP",
+        "school": "Shiratorizawa",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Satori Tendo (Winter Break)",
+        "rarity": "SP",
+        "school": "Shiratorizawa",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Hitoshi Ginjima (School Festival)",
+        "rarity": "SP",
+        "school": "Inarizaki",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Atsumu Miya (Winter Break)",
+        "rarity": "SP",
+        "school": "Inarizaki",
+        "position": "Setter"
+    },
+    {
+        "name": "Osamu Miya (Winter Break)",
+        "rarity": "SP",
+        "school": "Inarizaki",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Korai Hoshiumi (Winter Sports)",
+        "rarity": "SP",
+        "school": "Kamomedai",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Sachiro Hirugami (Winter Sports)",
+        "rarity": "SP",
+        "school": "Kamomedai",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Kenma Kozume (Final Exams)",
+        "rarity": "SP",
+        "school": "Nekoma",
+        "position": "Setter"
+    },
+    {
+        "name": "Lev Haiba (Final Exams)",
+        "rarity": "SP",
+        "school": "Nekoma",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Ryunosuke Tanaka (Sakura)",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "position": "Wing Spiker"
+    },
+
+    {
+        "name": "Atsumu Miya",
+        "rarity": "UR",
+        "school": "Inarizaki",
+        "position": "Setter"
+    },
+    {
+        "name": "Osamu Miya",
+        "rarity": "UR",
+        "school": "Inarizaki",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Korai Hoshiumi",
+        "rarity": "UR",
+        "school": "Kamomedai",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Sachiro Hirugami",
+        "rarity": "UR",
+        "school": "Kamomedai",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Kiyoomi Sakusa",
+        "rarity": "UR",
+        "school": "Itachiyama",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Motoya Komori",
+        "rarity": "UR",
+        "school": "Itachiyama",
+        "position": "Libero"
+    },
+    {
+        "name": "Wakatoshi Ushijima",
+        "rarity": "UR",
+        "school": "Shiratorizawa",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Toru Oikawa",
+        "rarity": "UR",
+        "school": "Aoba Johsai",
+        "position": "Setter"
+    },
+    {
+        "name": "Kotaro Bokuto",
+        "rarity": "UR",
+        "school": "Fukurodani",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Tobio Kageyama",
+        "rarity": "UR",
+        "school": "Karasuno",
+        "position": "Setter"
+    },
+    {
+        "name": "Tetsuro Kuroo",
+        "rarity": "UR",
+        "school": "Nekoma",
+        "position": "Middle Blocker"
+    },
+    
+    {
+        "name": "Kenma Kozume",
+        "rarity": "SSR",
+        "school": "Nekoma",
+        "position": "Setter"
+    },
+    {
+        "name": "Lev Haiba",
+        "rarity": "SSR",
+        "school": "Nekoma",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Kentaro Kyotani",
+        "rarity": "SSR",
+        "school": "Aoba Johsai",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Tatsuki Washio",
+        "rarity": "SSR",
+        "school": "Fukurodani",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Morisuke Yaku",
+        "rarity": "SSR",
+        "school": "Nekoma",
+        "position": "Libero"
+    },
+    {
+        "name": "Michinari Akagi",
+        "rarity": "SSR",
+        "school": "Inarizaki",
+        "position": "Libero"
+    },
+    {
+        "name": "Hayato Yamagata",
+        "rarity": "SSR",
+        "school": "Shiratorizawa",
+        "position": "Libero"
+    },
+    {
+        "name": "Haruki Komi",
+        "rarity": "SSR",
+        "school": "Fukurodani",
+        "position": "Libero"
+    },
+    {
+        "name": "Yuji Terushima",
+        "rarity": "SSR",
+        "school": "Johzenji",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Rintaro Suna",
+        "rarity": "SSR",
+        "school": "Inarizaki",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Kanji Koganegawa",
+        "rarity": "SSR",
+        "school": "Date Kogyo",
+        "position": "Setter"
+    },
+    {
+        "name": "Yu Nishinoya",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "position": "Libero"
+    },
+    {
+        "name": "Kenji Futakuchi",
+        "rarity": "SSR",
+        "school": "Date Kogyo",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Kei Tsukishima",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Tsutomu Goshiki",
+        "rarity": "SSR",
+        "school": "Shiratorizawa",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Satori Tendo",
+        "rarity": "SSR",
+        "school": "Shiratorizawa",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Hajime Iwaizumi",
+        "rarity": "SSR",
+        "school": "Aoba Johsai",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Tobio Kageyama (Practice)",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "position": "Setter"
+    },
+    {
+        "name": "Takehito Sasaya",
+        "rarity": "SSR",
+        "school": "Date Kogyo",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Takanobu Aone",
+        "rarity": "SSR",
+        "school": "Date Kogyo",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Asahi Azumane",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Kenjiro Shirabu",
+        "rarity": "SSR",
+        "school": "Shiratorizawa",
+        "position": "Setter"
+    },
+    {
+        "name": "Toru Oikawa (Practice)",
+        "rarity": "SSR",
+        "school": "Aoba Johsai",
+        "position": "Setter"
+    },
+    {
+        "name": "Reon Ohira",
+        "rarity": "SSR",
+        "school": "Shiratorizawa",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Oshiro Aran",
+        "rarity": "SSR",
+        "school": "Inarizaki",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Shoyo Hinata",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Ryunosuke Tanaka",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Daichi Sawamura",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Tetsuro Kuroo (Practice)",
+        "rarity": "SSR",
+        "school": "Nekoma",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Keiji Akaashi",
+        "rarity": "SSR",
+        "school": "Fukurodani",
+        "position": "Setter"
+    },
+    {
+        "name": "Akinori Konoha",
+        "rarity": "SSR",
+        "school": "Fukurodani",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Eita Semi",
+        "rarity": "SSR",
+        "school": "Shiratorizawa",
+        "position": "Setter"
+    },
+    {
+        "name": "Shinsuke Kita",
+        "rarity": "SSR",
+        "school": "Inarizaki",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Hitoshi Ginjima",
+        "rarity": "SSR",
+        "school": "Inarizaki",
+        "position": "Wing Spiker"
+    },
+
+    {
+        "name": "Shoyo Hinata (Practice)",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Daichi Sawamura (Practice)",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Koshi Sugawara",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "position": "Setter"
+    },
+    {
+        "name": "Asahi Azumane (Practice)",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Yu Nishinoya (Practice)",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "position": "Libero"
+    },
+    {
+        "name": "Chikara Ennoshita",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Ryunosuke Tanaka (Practice)",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Kei Tsukishima (Practice)",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Tadashi Yamaguchi",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Hajime Iwaizumi (Practice)",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Issei Matsukawa",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Takahiro Hanamaki",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Shigeru Yahaba",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "position": "Setter"
+    },
+    {
+        "name": "Shinji Watari",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "position": "Libero"
+    },
+    {
+        "name": "Yutaro Kindaichi",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "position": ""
+    },
+    {
+        "name": "",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "position": ""
+    },
+    {
+        "name": "Akira Kunimi",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Kentaro Kyotani (Practice)",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Kenma Kozume (Practice)",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "position": "Setter"
+    },
+    {
+        "name": "Morisuke Yaku (Practice)",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "position": "Libero"
+    },
+    {
+        "name": "Lev Haiba (Practice)",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Taketora Yamamoto",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Nobuyuki Kai",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Shohei Fukunaga",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "So Inuoka",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Tamahiko Teshiro",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "position": "Setter"
+    },
+    {
+        "name": "Takanobu Aone (Practice)",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Kenji Futakuchi (Pratice)",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Kanji Koganegawa (Practice)",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "position": "Setter"
+    },
+    {
+        "name": "Yasushi Kamasaki",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Kaname Moniwa",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "position": "Setter"
+    },
+    {
+        "name": "Takehito Sasaya (Practice)",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "position": "Opposite Hitter"
+    },
+    {
+        "name": "Yutaka Obara",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Taichi Kawanishi",
+        "rarity": "SR",
+        "school": "Shiratorizawa",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Yamato Sarukui",
+        "rarity": "SR",
+        "school": "Fukurodani",
+        "position": "Wing Spiker"
+    },
+    {
+        "name": "Takeharu Futamata",
+        "rarity": "SR",
+        "school": "Johzenji",
+        "position": "Setter"
+    },
+    {
+        "name": "Katsumichi Higashiyama",
+        "rarity": "SR",
+        "school": "Johzenji",
+        "position": "Wing Spiker"
+    }
+
+]

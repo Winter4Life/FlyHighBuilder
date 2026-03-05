@@ -11,7 +11,10 @@ class Character(Base):
         nullable=False
     )
     school = Column(String, nullable=False)
-    position = Column(String, nullable=False)
+    position = Column(
+        Enum("Setter", "Libero", "Middle Blocker", "Wing Spiker",  "Opposite Hitter", name="character_rarity"), 
+        nullable=False
+    )
     
     # Relationships
     specialties = relationship("CharacterSpecialty", back_populates="character", cascade="all, delete") # reverses relationship

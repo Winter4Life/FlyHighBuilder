@@ -1,41 +1,65 @@
 [
-    {"name": "Quick Attack", 
-    "description": "Increases Spike ability of Quick Attack players.",
-    "category": "Attack"},
-    {"name": "Power Attack", 
-    "description": "Increases Spike ability of Power Attack players.",
-    "category": "Attack"},
-    {"name": "Set", 
-    "description": "Increases Set ability of the player.",
-    "category": "Attack"},
+    {
+        "name": "Quick Attack", 
+        "description": "Increases Spike ability of Quick Attack players.",
+        "category": "Attack"
+    },
+    {
+        "name": "Power Attack", 
+        "description": "Increases Spike ability of Power Attack players.",
+        "category": "Attack"
+    },
+    {
+        "name": "Set", 
+        "description": "Increases Set ability of the player.",
+        "category": "Attack"
+    },
 
-    {"name": "Awareness", 
-    "description": "Increases player’s chances of performing Critical Servers, Spikes, or Sets.",
-    "category": "Attack Bonus"},
-    {"name": "Strength", 
-    "description": "Increases the power of player’s Critical Servers, Spikes, or Sets.",
-    "category": "Attack Bonus"},
-    {"name": "Attack Technique", 
-    "description": "Increases the power of players’ Serves, Spikes, or Sets.",
-    "category": "Attack Bonus"},
+    {
+        "name": "Awareness", 
+        "description": "Increases player’s chances of performing Critical Servers, Spikes, or Sets.",
+        "category": "Attack Bonus"
+    },
+    {
+        "name": "Strength", 
+        "description": "Increases the power of player’s Critical Servers, Spikes, or Sets.",
+        "category": "Attack Bonus"
+    },
+    {
+        "name": "Attack Technique", 
+        "description": "Increases the power of players’ Serves, Spikes, or Sets.",
+        "category": "Attack Bonus"
+    },
 
-    {"name": "Receive", 
-    "description": "Increases Receive consistency.",
-    "category": "Defense"},
-    {"name": "Block", 
-    "description": "Increases Block effectiveness.",
-    "category": "Defense"},
-    {"name": "Save", 
-    "description": "Increases the chance of preventing a potential loss point.",
-    "category": "Defense"},
+    {
+        "name": "Receive", 
+        "description": "Increases Receive consistency.",
+        "category": "Defense"
+    },
+    {
+        "name": "Block", 
+        "description": "Increases Block effectiveness.",
+        "category": "Defense"
+    },
+    {
+        "name": "Save", 
+        "description": "Increases the chance of preventing a potential loss point.",
+        "category": "Defense"
+    },
 
-    {"name": "Reflex", 
-    "description": "Increases players’ chance of performing Critical Receives, Blocks, or Saves.",
-    "category": "Defense Bonus"},
-    {"name": "Spirit", 
-    "description": "Increases the power of players’ Critical Receives, Blocks, or Saves.",
-    "category": "Defense Bonus"},
-    {"name": "Defense Technique", 
-    "description": "Increases the power of players’ Receives, Blocks, or Saves.",
-    "category": "Defense Bonus"}
+    {
+        "name": "Reflex", 
+        "description": "Increases players’ chance of performing Critical Receives, Blocks, or Saves.",
+        "category": "Defense Bonus"
+    },
+    {
+        "name": "Spirit", 
+        "description": "Increases the power of players’ Critical Receives, Blocks, or Saves.",
+        "category": "Defense Bonus"
+    },
+    {
+        "name": "Defense Technique", 
+        "description": "Increases the power of players’ Receives, Blocks, or Saves.",
+        "category": "Defense Bonus"
+    }
 ]
