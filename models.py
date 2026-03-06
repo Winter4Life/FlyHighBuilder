@@ -12,7 +12,7 @@ class Character(Base):
     )
     school = Column(String, nullable=False)
     position = Column(
-        Enum("Setter", "Libero", "Middle Blocker", "Wing Spiker",  "Opposite Hitter", name="character_rarity"), 
+        Enum("Setter", "Libero", "Middle Blocker", "Wing Spiker",  "Opposite Hitter", name="character_position"), 
         nullable=False
     )
     
@@ -29,7 +29,7 @@ class CharacterStat(Base):
     char_id = Column(Integer, ForeignKey("characters.id"), nullable=False)
     stat_id = Column(Integer, ForeignKey("stats.id"), nullable=False)
     level = Column(Float, nullable=False)
-    value = Column(Float, nullable=False)
+    value = Column(Float, nullable=True)
 
     character = relationship("Character", back_populates="stats")
     stat = relationship("Stat", back_populates="character_stats")
@@ -57,7 +57,7 @@ class SkillsResonance(Base):
     id = Column(Integer, primary_key=True)
     char_id = Column(Integer, ForeignKey('characters.id'), nullable=False)
     resonance_level = Column(Integer, nullable=False)
-    description = Column(String, nullable=False)
+    description = Column(String, nullable=True)
     
     character = relationship("Character", back_populates="skill_resonances")
     
@@ -72,7 +72,7 @@ class Skill(Base):
     id = Column(Integer, primary_key=True)
     char_id = Column(Integer, ForeignKey('characters.id'), nullable=False)
     name = Column(String, nullable=False)
-    description = Column(String, nullable=False)
+    description = Column(String, nullable=True)
     
     character = relationship("Character", back_populates="skills")
     skill_tags = relationship("SkillTag", back_populates="skill", cascade="all, delete")
@@ -109,15 +109,15 @@ class Potentials(Base):
         Enum("Quick Attack", "Power Attack", "Block", "Receive", "Set", "Enhancement", name="potential_category"),
         nullable=False
     )
-    effect_2pc = Column(String, nullable=False)
-    effect_4pc = Column(String, nullable=False)
+    effect_2pc = Column(String, nullable=True)
+    effect_4pc = Column(String, nullable=True)
     
 class Stat(Base):
     __tablename__ = "stats"
     
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False, unique=True)
-    description = Column(String, nullable=False)
+    description = Column(String, nullable=True)
     category = Column(
         Enum("Attack", "Attack Bonus", "Defense", "Defense Bonus", name="stat_category"),
         nullable=False
@@ -147,7 +147,7 @@ class MemoryStat(Base):
     stat_id = Column(Integer, ForeignKey("stats.id"), nullable=False)
     
     level = Column(Integer, nullable=False)  # 1 or 80
-    value = Column(Float, nullable=False)
+    value = Column(Float, nullable=True)
     
     memory = relationship("Memory", back_populates="stats")
     stat = relationship("Stat", back_populates="memory_stats")
@@ -162,7 +162,7 @@ class MemoryTier(Base):
     id = Column(Integer, primary_key=True)
     memory_id = Column(Integer, ForeignKey("memories.id"), nullable=False)
     tier = Column(Integer, nullable=False)
-    description = Column(String, nullable=False)
+    description = Column(String, nullable=True)
     
     memory = relationship("Memory", back_populates="tiers")
 
