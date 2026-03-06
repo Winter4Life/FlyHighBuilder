@@ -1,0 +1,426 @@
+[
+    {
+        "name": "Shoyo Hinata (Sakura)",
+        "specialties": ["Receive", "Quick Attack"]
+    },
+    {
+        "name": "Koshi Sugawara (After-School)",
+        "specialties": ["Set", "Serve", "Block"]
+    },
+    {
+        "name": "Kenma Kozume (Sakura)",
+        "specialties": ["Set", "Receive"]
+    },
+    {
+        "name": "Yu Nishinoya (After-School)",
+        "specialties": ["Set", "Receive"]
+    },
+    {
+        "name": "Kotaro Bokuto (Blazing Beach)",
+        "specialties": ["Receive", "Power Attack"]
+    },
+    {
+        "name": "Keiji Akaashi (Blazing Beach)",
+        "specialties": ["Set", "Power Attack"]
+    },
+    {
+        "name": "Takanobu Aone (Blazing Beach)",
+        "specialties": ["Serve", "Block"]
+    },
+    {
+        "name": "Kei Tsukishima (Fireworks Festival)",
+        "specialties": ["Block", "Quick Attack"]
+    },
+    {
+        "name": "Tetsuro Kuroo (Fireworks Festival)",
+        "specialties": ["Receive", "Block"]
+    },
+    {
+        "name": "Akira Kunimi (Sports Festival)",
+        "specialties": ["Power Attack", "Receive"]
+    },
+    {
+        "name": "Kanji Koganegawa (Sports Festival)",
+        "specialties": ["Set", "Block"]
+    },
+    {
+        "name": "Hajime Iwaizumi (School Festival)",
+        "specialties": ["Receive", "Power Attack"]
+    },
+    {
+        "name": "Toru Oikawa (School Festival)",
+        "specialties": ["Serve", "Set", "Power Attack"]
+    },
+    {
+        "name": "Wakatoshi Ushijima (School Festival)",
+        "specialties": ["Serve", "Power Attack"]
+    },
+    {
+        "name": "Satori Tendo (Winter Break)",
+        "specialties": ["Quick Attack", "Block"]
+    },
+    {
+        "name": "Hitoshi Ginjima (School Festival)",
+        "specialties": ["Receive", "Power Attack"]
+    },
+    {
+        "name": "Atsumu Miya (Winter Break)",
+        "specialties": ["Set", "Serve", "Quick Attack"]
+    },
+    {
+        "name": "Osamu Miya (Winter Break)",
+        "specialties": ["Set", "Quick Attack"]
+    },
+    {
+        "name": "Korai Hoshiumi (Winter Sports)",
+        "specialties": ["Block", "Serve", "Receive", "Quick Attack", "Power Attack"]
+    },
+    {
+        "name": "Sachiro Hirugami (Winter Sports)",
+        "specialties": ["Block", "Quick Attack"]
+    },
+    {
+        "name": "Kenma Kozume (Final Exams)",
+        "specialties": ["Set", "Receive"]
+    },
+    {
+        "name": "Lev Haiba (Final Exams)",
+        "specialties": ["Block", "Quick Attack"]
+    },
+    {
+        "name": "Ryunosuke Tanaka (Sakura)",
+        "specialties": ["Power Attack", "Receive"]
+    },
+    {
+        "name": "Atsumu Miya",
+        "specialties": ["Set", "Serve", "Quick Attack"]
+    },
+    {
+        "name": "Osamu Miya",
+        "specialties": ["Serve", "Quick Attack"]
+    },
+    {
+        "name": "Korai Hoshiumi",
+        "specialties": ["Block", "Serve", "Receive", "Power Attack"]
+    },
+    {
+        "name": "Sachiro Hirugami",
+        "specialties": ["Serve", "Block"]
+    },
+    {
+        "name": "Kiyoomi Sakusa",
+        "specialties": ["Receive", "Power Attack"]
+    },
+    {
+        "name": "Motoya Komori",
+        "specialties": ["Set", "Receive"]
+    },
+    {
+        "name": "Wakatoshi Ushijima",
+        "specialties": ["Power Attack", "Serve"]
+    },
+    {
+        "name": "Toru Oikawa",
+        "specialties": ["Set", "Serve", "Power Attack"]
+    },
+    {
+        "name": "Kotaro Bokuto",
+        "specialties": ["Serve", "Power Attack"]
+    },
+    {
+        "name": "Tobio Kageyama",
+        "specialties": ["Set", "Serve", "Quick Attack"]
+    },
+    {
+        "name": "Tetsuro Kuroo",
+        "specialties": ["Quick Attack", "Block"]
+    },
+    {
+        "name": "Kenma Kozume",
+        "specialties": ["Set", "Receive"]
+    },
+    {
+        "name": "Lev Haiba",
+        "specialties": ["Block", "Quick Attack"]
+    },
+    {
+        "name": "Kentaro Kyotani",
+        "specialties": ["Serve", "Power Attack"]
+    },
+    {
+        "name": "Tatsuki Washio",
+        "specialties": ["Block", "Quick Attack"]
+    },
+    {
+        "name": "Morisuke Yaku",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Michinari Akagi",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Hayato Yamagata",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Haruki Komi",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Yuji Terushima",
+        "specialties": ["Serve", "Power Attack"]
+    },
+    {
+        "name": "Rintaro Suna",
+        "specialties": ["Block", "Quick Attack"]
+    },
+    {
+        "name": "Kanji Koganegawa",
+        "specialties": ["Set", "Block"]
+    },
+    {
+        "name": "Yu Nishinoya",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Kenji Futakuchi",
+        "specialties": ["Serve", "Block"]
+    },
+    {
+        "name": "Kei Tsukishima",
+        "specialties": ["Block", "Quick Attack"]
+    },
+    {
+        "name": "Tsutomu Goshiki",
+        "specialties": ["Power Attack", "Serve"]
+    },
+    {
+        "name": "Satori Tendo",
+        "specialties": ["Block"]
+    },
+    {
+        "name": "Hajime Iwaizumi",
+        "specialties": ["Power Attack"]
+    },
+    {
+        "name": "Tobio Kageyama (Practice)",
+        "specialties": ["Serve", "Set", "Quick Attack"]
+    },
+    {
+        "name": "Takehito Sasaya",
+        "specialties": ["Power Attack"]
+    },
+    {
+        "name": "Takanobu Aone",
+        "specialties": ["Quick Attack", "Block"]
+    },
+    {
+        "name": "Asahi Azumane",
+        "specialties": ["Serve", "Power Attack"]
+    },
+    {
+        "name": "Kenjiro Shirabu",
+        "specialties": ["Set", "Power Attack"]
+    },
+    {
+        "name": "Toru Oikawa (Practice)",
+        "specialties": ["Set", "Serve", "Power Attack"]
+    },
+    {
+        "name": "Reon Ohira",
+        "specialties": ["Receive", "Power Attack"]
+    },
+    {
+        "name": "Aran Ojiro",
+        "specialties": ["Serve", "Power Attack"]
+    },
+    {
+        "name": "Shoyo Hinata",
+        "specialties": ["Quick Attack"]
+    },
+    {
+        "name": "Ryunosuke Tanaka",
+        "specialties": ["Power Attack"]
+    },
+    {
+        "name": "Daichi Sawamura",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Tetsuro Kuroo (Practice)",
+        "specialties": ["Block", "Quick Attack"]
+    },
+    {
+        "name": "Keiji Akaashi",
+        "specialties": ["Set", "Power Attack"]
+    },
+    {
+        "name": "Akinori Konoha",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Eita Semi",
+        "specialties": ["Set", "Serve", "Power Attack"]
+    },
+    {
+        "name": "Shinsuke Kita",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Hitoshi Ginjima",
+        "specialties": ["Receive", "Power Attack"]
+    },
+    {
+        "name": "Shoyo Hinata (Practice)",
+        "specialties": ["Quick Attack"]
+    },
+    {
+        "name": "Daichi Sawamura (Practice)",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Koshi Sugawara",
+        "specialties": ["Set", "Serve", "Power Attack"]
+    },
+    {
+        "name": "Asahi Azumane (Practice)",
+        "specialties": ["Serve", "Power Attack"]
+    },
+    {
+        "name": "Yu Nishinoya (Practice)",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Chikara Ennoshita",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Ryunosuke Tanaka (Practice)",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Kei Tsukishima (Practice)",
+        "specialties": ["Block", "Quick Attack"]
+    },
+    {
+        "name": "Tadashi Yamaguchi",
+        "specialties": ["Serve"]
+    },
+    {
+        "name": "Hajime Iwaizumi (Practice)",
+        "specialties": ["Power Attack"]
+    },
+    {
+        "name": "Issei Matsukawa",
+        "specialties": ["Quick Attack", "Block"]
+    },
+    {
+        "name": "Takahiro Hanamaki",
+        "specialties": ["Power Attack", "Receive"]
+    },
+    {
+        "name": "Shigeru Yahaba",
+        "specialties": ["Set", "Serve", "Power Attack"]
+    },
+    {
+        "name": "Shinji Watari",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Yutaro Kindaichi",
+        "specialties": ["Block", "Quick Attack"]
+    },
+    {
+        "name": "Akira Kunimi",
+        "specialties": ["Power Attack", "Receive"]
+    },
+    {
+        "name": "Kentaro Kyotani (Practice)",
+        "specialties": ["Serve", "Power Attack"]
+    },
+    {
+        "name": "Kenma Kozume (Practice)",
+        "specialties": ["Set", "Receive"]
+    },
+    {
+        "name": "Morisuke Yaku (Practice)",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Lev Haiba (Practice)",
+        "specialties": ["Quick Attack"]
+    },
+    {
+        "name": "Taketora Yamamoto",
+        "specialties": ["Power Attack"]
+    },
+    {
+        "name": "Nobuyuki Kai",
+        "specialties": ["Receive"]
+    },
+    {
+        "name": "Shohei Fukunaga",
+        "specialties": ["Power Attack", "Receive"]
+    },
+    {
+        "name": "So Inuoka",
+        "specialties": ["Block"]
+    },
+    {
+        "name": "Tamahiko Teshiro",
+        "specialties": ["Set", "Serve", "Receive"]
+    },
+    {
+        "name": "Takanobu Aone (Practice)",
+        "specialties": ["Block"]
+    },
+    {
+        "name": "Kenji Futakuchi (Pratice)",
+        "specialties": ["Power Attack", "Block"]
+    },
+    {
+        "name": "Kanji Koganegawa (Practice)",
+        "specialties": ["Set", "Block"]
+    },
+    {
+        "name": "Yasushi Kamasaki",
+        "specialties": ["Serve", "Block", "Quick Attack"]
+    },
+    {
+        "name": "Kaname Moniwa",
+        "specialties": ["Set", "Block"]
+    },
+    {
+        "name": "Takehito Sasaya (Practice)",
+        "specialties": ["Power Attack"]
+    },
+    {
+        "name": "Yutaka Obara",
+        "specialties": ["Block", "Receive"]
+    },
+    {
+        "name": "Taichi Kawanishi",
+        "specialties": ["Block"]
+    },
+    {
+        "name": "Yamato Sarukui",
+        "specialties": ["Receive", "Power Attack"]
+    },
+    {
+        "name": "Takeharu Futamata",
+        "specialties": ["Serve", "Set", "Power Attack"]
+    },
+    {
+        "name": "Katsumichi Higashiyama",
+        "specialties": ["Receive", "Power Attack"]
+    },
+    {
+        "name": "Ren Omini",
+        "specialties": ["Block"]
+    },
+    {
+        "name": "Tobio Kageyama (Kitagawa Daiichi)",
+        "specialties": ["Set", "Serve", "Quick Attack"]
+    }
+]
