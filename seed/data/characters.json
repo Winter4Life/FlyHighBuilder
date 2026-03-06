@@ -350,7 +350,7 @@
         "position": "Wing Spiker"
     },
     {
-        "name": "Oshiro Aran",
+        "name": "Aran Ojiro",
         "rarity": "SSR",
         "school": "Inarizaki",
         "position": "Wing Spiker"
@@ -637,5 +637,17 @@
         "rarity": "SR",
         "school": "Johzenji",
         "position": "Wing Spiker"
+    },
+    {
+        "name": "Ren Omini",
+        "rarity": "SR",
+        "school": "Inarizaki",
+        "position": "Middle Blocker"
+    },
+    {
+        "name": "Tobio Kageyama (Kitagawa Daiichi)",
+        "rarity": "SR",
+        "school": null,
+        "position": "Setter"
     }
 ]
