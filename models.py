@@ -43,13 +43,22 @@ class CharacterSpecialty(Base):
     
     id = Column(Integer, primary_key=True)
     char_id = Column(Integer, ForeignKey('characters.id'), nullable=False)
-    specialty = Column(String, nullable=False)
+    specialty_id = Column(Integer, ForeignKey('specialties.id'), nullable=False)
     
     character = relationship("Character", back_populates="specialties")
+    specialty = relationship("Specialty", back_populates="characters")
     
     __table_args__ = (
-        UniqueConstraint("char_id", "specialty", name="uix_char_specialty"),
+        UniqueConstraint("char_id", "specialty_id", name="uix_char_specialty"),
     )
+    
+class Specialty(Base):
+    __tablename__ = "specialties"
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=False, unique=True)
+
+    characters = relationship("CharacterSpecialty", back_populates="specialty")
 
 class SkillsResonance(Base):
     __tablename__ = 'skills_resonances'
