@@ -80,11 +80,26 @@ class Skill(Base):
     
     id = Column(Integer, primary_key=True)
     char_id = Column(Integer, ForeignKey('characters.id'), nullable=False)
+    slot = Column(Integer, nullable=False)  # 1–4
     name = Column(String, nullable=False)
-    description = Column(String, nullable=True)
     
     character = relationship("Character", back_populates="skills")
     skill_tags = relationship("SkillTag", back_populates="skill", cascade="all, delete")
+    levels = relationship("SkillLevel", back_populates="skill", cascade="all, delete")
+    
+class SkillLevel(Base):
+    __tablename__ = "skill_levels"
+
+    id = Column(Integer, primary_key=True)
+    skill_id = Column(Integer, ForeignKey("skills.id"), nullable=False)
+    level = Column(Integer, nullable=False)
+    description = Column(String, nullable=False)
+
+    skill = relationship("Skill", back_populates="levels")
+
+    __table_args__ = (
+        UniqueConstraint("skill_id", "level", name="uix_skill_level"),
+    )
     
 class Tag(Base):
     __tablename__ = "tags"
